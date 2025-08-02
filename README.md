@@ -12,6 +12,12 @@ docker compose up -d
 docker compose down
 ```
 
+## Delete DB date
+Execute the following command after [Terminate test environment](#terminate-test-environment) 
+```
+docker volume rm db-practice_test-db-data
+```
+
 ## Access DB through Web UI
 - Open browser and access http://localhost:8080
 - Enter "pgadmin@test.com" into Email Address/Username and "password" into Password, then login

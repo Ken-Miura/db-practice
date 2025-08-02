@@ -13,7 +13,7 @@ services:
       # postgresql.org/docs/17/locale.html 23.1.2. Behavior
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --locale=C"
     volumes:
-      - database:/var/lib/postgresql/data
+      - test-db-data:/var/lib/postgresql/data
     networks:
       - development-network
 
@@ -32,7 +32,7 @@ services:
       - db
 
 volumes:
-  database:
+  test-db-data:
     driver: local
 
 networks:
