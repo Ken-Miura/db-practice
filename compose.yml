@@ -15,7 +15,7 @@ services:
     volumes:
       - database:/var/lib/postgresql/data
     networks:
-      - development_network
+      - development-network
 
   db-management-client:
     # データベース操作が可能なWeb UIを提供するimage
@@ -27,7 +27,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: pgadmin@test.com
       PGADMIN_DEFAULT_PASSWORD: password
     networks:
-      - development_network
+      - development-network
     depends_on:
       - db
 
@@ -36,4 +36,4 @@ volumes:
     driver: local
 
 networks:
-  development_network:
+  development-network:
