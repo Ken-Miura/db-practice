@@ -2,6 +2,7 @@ services:
 
   # Use postgres/example as user/password credentials
   db:
+    container_name: test-db
     image: postgres:17.5
     restart: always
     ports:
