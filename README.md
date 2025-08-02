@@ -12,7 +12,7 @@ docker compose up -d
 docker compose down
 ```
 
-## Delete DB date
+## Delete DB data
 Execute the following command after [Terminate test environment](#terminate-test-environment) 
 ```
 docker volume rm db-practice_test-db-data
